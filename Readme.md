@@ -44,4 +44,5 @@ curl -v -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/reposito
 curl -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/acc78ff4dce9b38f1c82459c8d4b5c2e4b7c7183 | grep "diff --git" | cut -d' ' -f3
 curl -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/acc78ff4dce9b38f1c82459c8d4b5c2e4b7c7183 | grep "diff --git" | cut -d' ' -f3 | sed 's/^a\///g'
 
+curl -u "sjd300671@gmail.com":[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/098c38a | grep "diff --git" | egrep -v "curl" | cut -d' ' -f3 | sed 's/^a\///g'
 
