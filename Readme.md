@@ -35,4 +35,13 @@ push.changes[0].new.target.hash = NEW
 push.changes[0].new.target.parent.hash = OLD
 
 
-curl https://api.bitbucket.org/2.0/repositories/deevodavis
+
+curl -v -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/1.0/repositories/deevodavis/smartdeploy
+curl -v -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/commits
+curl -v -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/d32408bfd6f099c52037d8b2a100503409fb9b5f
+
+
+curl -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/acc78ff4dce9b38f1c82459c8d4b5c2e4b7c7183 | grep "diff --git" | cut -d' ' -f3
+curl -u sjd300671@gmail.com:[Jira2407] https://bitbucket.org/api/2.0/repositories/deevodavis/smartdeploy/diff/acc78ff4dce9b38f1c82459c8d4b5c2e4b7c7183 | grep "diff --git" | cut -d' ' -f3 | sed 's/^a\///g'
+
+
