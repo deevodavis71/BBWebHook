@@ -33,3 +33,6 @@ push.changes.commits.hash ==== NEW COMMIT
 
 push.changes[0].new.target.hash = NEW
 push.changes[0].new.target.parent.hash = OLD
+
+
+curl https://api.bitbucket.org/2.0/repositories/deevodavis
